@@ -1,0 +1,51 @@
+1.echo Command
+---->Echo Command ouput the strings that are pass to it as arguments. Ex. echo "Hello World"
+2. ComputerName or Hostname
+--> Hostname
+3.name of current user---->whoami
+4. check current path or directory you are working in--->pwd(present or working director)
+5. difference between absolute or rlative path---> cd/root/script---->absolute
+cd script/--->relative
+6. create file in Linux
+ex. touch myfile
+7.How will u edit exisiting file
+using vi myfile ----> press 'i' ---> save exit-->:wq
+8.remane file
+mv myfile new_file
+9.Search for a String in a file
+grep
+10.difference in grep and egrape
+dealing with multiple file, more than 1 string at a time using typeseprator u can use
+egrep "key1|key2|key4"
+11. How we can read file w/o using cat command
+---> less new_file
+12. what is advantages of less Command
+----> we can easily read big files
+forward and backward search is easy, navigation from top to bottom is easy.
+13. How to check files Permission
+----> ls -l or getecl file_name---> o/p of this is rwxrwxrwx----> here 1st 3 are for user 2nd 3 for group 3rd for other user
+14. How to check ip of ur linuxserver
+---->ipconfig,ipaddr
+15. How to read top five lines in a file
+-----> head -5 file_name
+16. How to read last 5 lines in a file
+tail -5 file_name
+17. List the hidden files
+ls -la
+18. How to see all recently used Commands
+history
+19.what is root?
+Admin or super user /root home directory for root user
+if u do cd / ---> here /--> is directory which take u root
+20. what is inode and how to find it for a file
+---->inode is index node,it serves as a unique identifier for a specifice piece of metadata on a given filesystems  ex.ls -li
+21. finding files on linux system
+----> find and locate command
+ex. find . -name myfile
+22. counting word or lines
+wc 
+wc -l index.html
+23. How can you combine 2 commands
+we can combine 2 commands using command1 | command 2| command 3
+Pipe is use to combine 2 commands and redirect output of command 1 to Command 2
+24.
