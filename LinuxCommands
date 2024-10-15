@@ -48,4 +48,99 @@ wc -l index.html
 23. How can you combine 2 commands
 we can combine 2 commands using command1 | command 2| command 3
 Pipe is use to combine 2 commands and redirect output of command 1 to Command 2
-24.
+Ex.cat index.html | wc -l
+24.. differnce between 2 files
+diff file 1 and file 2 ex. diff file1 file2
+25. what is use of shread Command
+---> permantly delete file ex. shred -u filename / shread --remove file_name
+26. How to check system architecture info
+----> lscpu
+27. how to combine 2 files?
+cat file1 file 2
+cat file 1 file 2 > fiile 3
+28. find type of file?
+---> file index.html
+29. sort content of file
+----> sort fileName or cat file_name|sort
+30. different ways to access linux server remotely
+putty, git bash,cmd
+31. file permission of file in linux read(r)
+write(w) Executable (x)---> if script that need to excute
+32. which permission allow a user to run excutable file
+we need to provide executable(x) permission to user
+33.Redirection How to write o/p of command into a file?
+command > file_name  ex.pwd > pwd.txt
+34.How to write in file without deleting exisiting content
+--------> we can append file using >> ex. pwd >> pwd.txt
+pwd >> pwd.txt
+cat pwd.txt
+35.redirect an error of a command into a file
+to redirect an error we need to use 2>
+to redirect both error and o/p 2>&1
+ex. cat abc 2>pwd.txt
+36. How to automate task or script?
+using cron jobs
+for which we use crontab or at command
+37.How to check schedule job?
+crontab -l
+38.what is meaning of ***** cron job
+-->first * min
+* hour
+*day of month
+*month
+*day of week
+39. if ur cron job not worked How to check
+--->check system time
+crontab entry
+check var/log/messages
+40. what is demoan service
+service keeps running in background
+ex. httpd,sshd,chronyd
+41.how to check service is running or not
+ex.systemctl status httpd.service
+42. How to start/stop service?
+systemctl start servicename
+systemctl stop servicename
+43. how to check for free disk space
+df coomand and how many % used
+44. check size of directory content
+du command ex. du script/
+45. How to check cpu utilization
+top
+46.what is process in linux
+an intsnace of a running program/application or excute command process is created
+for every process unique number assignemed called PID
+47.Check if process or application running or not
+ps command ex. ps - ef
+48.how to stop running process
+PID
+49. difference between kill and kill -9
+---> kill -9 forcefully terminate program
+50.check if ip server accessible or not
+ping or telnet command
+51. which command to use to get info about ports
+netstat command
+52.how to check open port on linux systems
+--->netstat putan | grep port_no
+53.How to check network interfaces in linux
+ifconfig and netstat
+54. differnce between telnat and SSH
+ssh is secure and talnet is not
+55.which service should be running on server to allow u to connect remotely?
+ssh or sshd Ex. systemctl status sshd
+56. ssh---> Secure shell is a network communication protocol 2 computers to communicate and share data
+57.why secure shell---> data communication is in encrypted format
+58. which command use to access linux system from terminal or another linux server
+ssh user@198.168.x.x
+59. transfer large file 10 GB--> compress gzip or gunzip
+--------------------------------------------------------------------------------------------------------------------------------
+Part 2
+what is RHEL Linux stands for
+
+
+
+
+
+
+
+
