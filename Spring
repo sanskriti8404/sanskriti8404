@@ -1,0 +1,14 @@
+Spring Vs Spring Boot
+Spring is Lightweight framework widely used to devlope enterprise Application,it helps to create loosedly coupled application, before spring came in picture, reduce time to market
+Spring boot- build on top of conventional spring framework, wieldly used to develop enterprise level application with Rest API s and CURD, Spring Boot provide 
+
+
+life cycle Spring bean
+ Container start and contair stop between depncies--- application.conntext.xml bean factory ---> setbeanname Instance creation-object ----> depencies injected
+init method called---> in xml 
+IOC-Design principle Controller for object creation--> control of object creation taken from application give to fraework, in cpntrast like class--> Spring container responsible creation and life cycle of beans
+right time , right depencies injected, loosely coupled,Concept
+Car class->Engine class
+create object in car
+
+
