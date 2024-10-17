@@ -1,0 +1,30 @@
+Deploying Spring Boot application into Tomcat Container using Jenkins
+Step1-> Download Jenkins
+Step2->download and install tomcat Container
+Step 3-> Choose Spring boot application in Git repo
+in server.Xml--> Change port No
+in tomcat.server.xml---> add roles
+In command prompt--> java - jar jenkins.war --httpPort=8081
+start Tomcat which is bin folder, start tomcat server 
+hit localhost 8080:/ tomcat login
+in manage Jenkins-->manageplugins---->Deploy--->install plugins
+go to dashboard---> have app
+Withing ur application in pom.xml check for packing type is war for application
+Copy repo url
+New item in jenkin---> Spring boot app-job within genral add repo url and add credentials
+go to buld trigger--->poll scm-->schedule have cron job *****--->everymin observe git repository
+go to build enviorment---> delete workspace before build start
+add Build steps---> add maven goals--> clean, Compile,package
+Deploy war file to tomcat Container ---->post build actions---> deploy war/ear to container **/war
+add Context as ur project name and as a Container add tomcat 7.0 and tomcat URL---> apply--->save
+
+Now JOB CREATED
+
+Click on Build Now---> once Success---> tomcats folder webapps---> war file genrated
+
+check in tomcat admin console---> tomcat on 5050---> click on manage App.
+
+
+
+
+
