@@ -1,0 +1,21 @@
+What is JWT?
+JSON Web Tocken, it is compact and self contained way to represent information between 2 parties,typically used for secured info between client and server
+JWT used for Authtication and Authorization
+JWT String Consist of 3 Parts- header, Payload, Signature
+
+header Consist of 2 things Algorithm used, token type
+Ex. Algorithm used-HS256
+typ:JWT
+Payload Consist of Claims-->personal informatiom, user id 
+Claims are public Private
+to create the signature part, u have to take encoded payload, encoded header+secrate
+JWT Signed with secrate Key or public private key pair ECDSA and RSA algorithms,Signature ensures integrity of token.
+Singnature ensures integrity of ur tocken and allows to validate ur token authencity, token not tempered at all.
+JWT Properly signed
+
+
+what is OAuth?
+Authentication- who u r?
+Autherization
+
+
