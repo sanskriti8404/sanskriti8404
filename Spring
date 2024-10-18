@@ -19,5 +19,9 @@ Spring IOC----> Car was Class
 IOC container is factory, Java configuration Object/ bean creation, factory bean, fatory method
 DI-loose Coupling between classes, None objcet depend on other
 Template Method pattern-Java mail sender template,JDBC or Hibernate all common things are there, JDBC trmplate, Manging Transcation,define structural flow of object.
+@Componet vs @Bean
+@Compont-class level,genric annotation,Automatically created and managed by Spring.
+@Bean-Method level,explitly declaring bean explicitly define in Configuration class
+------------------------------------------------------------------------------------------
 
 
