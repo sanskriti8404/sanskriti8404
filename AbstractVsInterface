@@ -1,0 +1,22 @@
+Class Delared with Abstract Keyword
+it allow us to declare method signature using abstract Keyword(abstract Method)
+forces its subclass to implement all declared method, if class has method,suppose if class has method that is abstract, then class itself call as abstract
+abstract classes don't have any restriction on field and Method Modifiers, while in interface all public by defult, we can have static and instance intialization block in abstract class
+we can never have them in interface.
+abstract class may also have constructor which will get excecuted during object instantiation.
+When to Use an Interface
+-problem need to solve using multiple inheritance
+-when unrelated claseese implements interface
+-application functionality define as Contract, not concern who implemt it.
+Consider using the interface when our problem makes the statement “A is capable of [doing this]”.
+For example, “Clonable is capable of cloning an object”, “Drawable is capable of drawing a shape”, etc.
+------------------------------------------------------------------------------------------------------------
+When to use Abstract
+-we are trying to use inhertance concept in code.
+-share code with among many related classes
+-providing common base class methods,that subclass can override
+-if we have specified requirments and only partial implemtation details.
+-If one wants to have non-final or non-static methods to modify the states of an object.
+--------------------------------------------------------------------------------------------------------
+
+
