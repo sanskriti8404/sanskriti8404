@@ -24,4 +24,60 @@ Template Method pattern-Java mail sender template,JDBC or Hibernate all common t
 @Bean-Method level,explitly declaring bean explicitly define in Configuration class
 ------------------------------------------------------------------------------------------
 
+Actuator--> Controlling Anything,Actuator additional feature, helps you control monitor
+Feature to control application when push to production---> How many hits get in Rest or server hiting on production, Controlling feature
+How to use Actuator use in spring boot
+servername+port/health
+using status u can see its UP or not, 
+Add dependency as Actuator in ur pom.xml
+In application.properties file add managments.endpoints.web.exposure.include =*
+health, Info, what beans included what is exposed, web points
+
+we can check beans created for perticular Controller or not
+using actuator/beans
+u can see actuator/env as well---> what is server port, all beans
+Httptrace bean , In memory repository repository, Http trace avaliable for me.
+actuator/httptrace
+Create Custom endpoints
+@Endpoint(id ="customActor")
+@ReadOperation maps to HTTP GET
+@WriteOperation maps to HTTP POST
+@DELETE operation maps to HTTP DELETE
+------------------------------------------------------------
+Deployment
+In pom.xml --> package> war</packge>
+add Pulgin---> springboot-maven-Plugin
+-------------------------------------------
+Advantages of Yml vs Proprties file
+In yml---> hirectrical structure
+Server:8081
+If application wants to understand in Yml file u have Properties file How u do it?
+implements PropertySourceFcatory-- for YML file reading
+@Values and @
+--------------------------------------------------
+REST API
+REST Represents representational state transfer Protocol
+Rest web services follows REST architectural Concepts, completely statless
+Postman----->Rest API------>Server<----->DB
+URI--->Hit server 
+protocol---> serviceName
+----------------------------------------------------------
+Http Methods
+ This is way to interact with ur server, REST that specifies what action  has to followed to get requested resource
+Below are HTTP methods
+GET:- Fetching details from server
+POST:-Creation of new resourses on server
+PUT:- update old/exisiting resource on the server.
+DELETE: this method is used to delete the resource on the server
+
+idopomency---> GET,Head,OPTIONS,PUT,DELETE
+Notidempotancy--->POST and POST not safe or idempotent
+Space handle by DB or table 
+POST--->Change in memory---> hitting same url server hit n number of times and DB memory increase--->Not idempoenet
+Restful web services should not keep a client state on server, this restriction called statelessness
+Its responsibility of of client to pass context to server and then server 
+store context to process clients further request
+
+
+
 
