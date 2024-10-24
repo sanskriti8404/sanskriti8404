@@ -1,0 +1,47 @@
+1.Check if a Singly Linked List is cyclic (Singly linked list, only head node given) without taking extra  space.
+https://www.baeldung.com/cs/find-cycle-in-list
+2.find 2 elements from sorted array whose sum is given number (its complexity) .
+	Space complexity be of the O(1)
+public class TwoSum {
+    public static int[] findTwoElementsWithSum(int[] arr, int targetSum) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left < right) {
+            int currentSum = arr[left] + arr[right];
+
+            if (currentSum == targetSum) {
+                return new int[]{arr[left], arr[right]};
+            } else if (currentSum < targetSum) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+
+        return null; // If no such pair is found
+    }
+
+    public static void main(String[] args) {
+        int[] sortedArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int target = 10;
+        int[] result = findTwoElementsWithSum(sortedArray, target);
+
+        if (result != null) {
+            System.out.println("Elements found: " + result[0] + " and " + result[1]);
+        } else {
+            System.out.println("No such pair found.");
+        }
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.what is critical section in multi threading
+A critical section in multithreading is a segment of code that must be executed by only one thread at a time to prevent race conditions and ensure data consistency. 
+When multiple threads access shared resources or variables, they can interfere with each other 
+if their operations overlap, leading to unpredictable results.
+For example, consider two threads trying to increment a shared variable simultaneously. Without proper synchronization, both threads might read the same initial value, increment it, and write back the same result, effectively losing one increment operation. This is where critical sections come into play12.
+
+To manage critical sections, synchronization mechanisms like mutexes (mutual exclusions), semaphores, or locks are used. These mechanisms ensure that only one thread can enter the critical section at a time, thus preventing concurrent access and ensuring that operations on shared resources are atomic3.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.what is synchronized used in threading 
