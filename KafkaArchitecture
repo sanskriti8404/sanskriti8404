@@ -12,4 +12,38 @@ Min 3 Broker
 1.What are Guarantees provided by Kafka?
 The order will be same both messages send by producer to perticular topic partition.
 Consumers see record, in order they are stored in logs.
-also tolrate upto N-1 Failuar without loosing records Commited to logs
+also tolrate upto N-1 Failuar without loosing records Commited to logs.
+
+2.Explain some Kafka Streams real-time Use Cases.
+Zlando,Twitter,Uber --->ureplicator
+
+3.Topic Replication Factor--> It is very important to factor in topic replication while designing a Kafka system. Hence, 
+if in any case, broker goes down its topics’ replicas from another broker can solve the crisis.
+4. State one best feature of Kafka.
+ The best feature of Kafka is “Variety of Use Cases”. It means Kafka is able to manage the variety of use cases which are very 
+common for a Data Lake. For Example log aggregation, web activity tracking, and so on.
+-----------------------------------
+max.poll.interval.ms defines the delay between the calls to poll()
+The maximum delay between invocations of poll() when using consumer group management. This places an upper bound on 
+the amount of time that the consumer can be idle before fetching more 
+records. If poll() is not called before expiration of this timeout, then the consumer is considered failed 
+-----------------------------------------------------------------------------------------------------------
+Producer Example
+Sppring boot project--->maven , spring boot 3.0--->Correct depency
+add spring-Kafka depency
+Start Kafka server---> Start Zookeeper--->terminal---> bin/Zookeeper_server.sh config/zookeeper Properties
+start kafka_server.properties bin/kafka_server_start.sh config/server.priperties
+Specify where ur kafka running
+server
+port:9191
+spring:
+kafka:
+producer:
+booststrap server : localhost
+
+define package--->KafkaMessgaePublisher--->service class
+we have Kafka template by spring kafka depencey
+
+
+
+
