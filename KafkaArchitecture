@@ -1,0 +1,15 @@
+Apoache Kafka is Pub-Sub, Multiple Proceducer and Muliple Consumer, Durable enough messgae in Topic, Make message persitant, Message have Time to Live
+Proceduer Publish to Kafka Topic, with Durable Messaging System.
+Kafka by LinkedIn, Written In Scala,Handling log, sending data from 1 Application to another, Processing Re-processing-->Handling many messages, Time specifice logs, we need to perticular order
+Kafka-->Handling message beyween multiple applications, Handling logs
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Architecure of Kafka
+One Big Cluster multiple Broker
+Data Copied in Multiple Broker
+Multiple Follower Broker-->leader and Foller broker
+Min 3 Broker
+--------------------------------------------------------------------------------------------------------------------------------------------------
+1.What are Guarantees provided by Kafka?
+The order will be same both messages send by producer to perticular topic partition.
+Consumers see record, in order they are stored in logs.
+also tolrate upto N-1 Failuar without loosing records Commited to logs
